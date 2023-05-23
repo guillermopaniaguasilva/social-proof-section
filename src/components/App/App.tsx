@@ -17,11 +17,11 @@ const App = () => {
         </Description>
       </section>
       <section>
-        {ratings.map(({ starsQuantity, text }) => (
-          <RatingCard starsQuantity={starsQuantity} text={text} />
+        {ratings.map(({ starsQuantity, text }, i) => (
+          <RatingCard key={i} starsQuantity={starsQuantity} text={text} />
         ))}
       </section>
-      <section>
+      <section id="reviews">
         {reviews.map(({ name, imageUrl, title, text }, i) => (
           <ReviewCard
             key={i}

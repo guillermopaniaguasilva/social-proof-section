@@ -14,6 +14,24 @@ export const Container = styled.div`
 
   &:first-of-type {
     margin-top: 50px;
+
+    @media only screen and (min-width: 600px) {
+      margin-top: 0;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    width: 350px;
+    height: 234px;
+    margin-right: 0;
+
+    &:nth-of-type(2) {
+      margin-top: 36px;
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 72px;
+    }
   }
 `;
 

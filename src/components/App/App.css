@@ -10,3 +10,22 @@
   background-repeat: no-repeat, no-repeat;
   background-position: top 0px left 0px, bottom 0px right 0px;
 }
+
+@media only screen and (min-width: 600px) {
+  .app {
+    background-image: url('../../../public/assets/images/bg-pattern-top-desktop.svg'),
+      url('../../../public/assets/images/bg-pattern-bottom-desktop.svg');
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(240px, 40vw), 1fr));
+    grid-column-gap: 125px;
+    row-gap: 0;
+  }
+
+  #reviews {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
